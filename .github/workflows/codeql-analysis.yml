@@ -73,14 +73,14 @@ jobs:
   
     - name: Add Secure Code Warrior contextual training to SARIF
       uses: SecureCodeWarrior/github-action-add-sarif-contextual-training@v1
-#      with:
+      with:
 #          inputSarifFile: sarif/findings.sarif
-#          outputSarifFile: sarif/findings.processed.sarif
+          outputSarifFile: sarif/findings.processed.sarif
 #          githubToken: ${{ secrets.GITHUB_TOKEN }}
 
     - name: Import results SCW
       uses: github/codeql-action/upload-sarif@v3
-#      with:
+      with:
 #          category: import-sarif
-#          sarif_file: sarif/findings.processed.sarif
+          sarif_file: sarif/findings.processed.sarif
 
