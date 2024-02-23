@@ -79,7 +79,7 @@ jobs:
     #      githubToken: ${{ secrets.GITHUB_TOKEN }}
 
     - name: Import results SCW
-      uses: github/codeql-action/upload-sarif@v3
+      uses: github/codeql-action/upload-sarif@v2
       with:
           category: "import-sarif"
     #    sarif_file: sarif/findings.processed.sarif
